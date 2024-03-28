@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Coffee Lover</title>
+    <style>
+      .container {
+        max-width: 600px;
+        margin: 0 auto;
+        padding: 50px;
+      }
+      body {
+        background: linear-gradient(to top, #c79081 0%, #dfa579 40%);
+        margin: 0 auto;
+      }
+      h1 {
+        text-align: center;
+        color: #412525;
+        font-size: 42px;
+        font-family: Arial, Helvetica, sans-serif;
+        margin-top: 0;
+      }
+
+      h2 {
+        text-align: center;
+        color: #6c4343;
+        font-size: 28px;
+        font-family: Arial, Helvetica, sans-serif;
+        border: 1px solid #412525;
+        padding: 20px;
+        border-radius: 5px;
+      }
+      p {
+        text-align: left;
+        color: #364968;
+        font-family: Arial, Helvetica, sans-serif;
+        font-weight: light;
+        font-size: 18px;
+        margin: 0 auto;
+        padding: 5px;
+        line-height: 30px;
+      }
+      img {
+        display: block;
+        margin: 0 auto;
+        border-radius: 5px;
+        padding-bottom: 20px;
+      }
+      hr {
+        width: 350px;
+        border-color: #c46352;
+      }
+      .learn-more {
+        text-align: center;
+        color: #364968;
+        margin: 0 auto;
+        font-family: Arial, Helvetica, sans-serif;
+        display: block;
+        width: 200px;
+        padding: 10px 0px 20px 0px;
+        font-weight: bold;
+      }
+      .learn-more:hover {
+        color: #6c4343;
+      }
+      button {
+        display: block;
+        margin: 0 auto;
+        background: #fddf97;
+        color: #364968;
+        font-size: 18px;
+        font-family: Arial, Helvetica, sans-serif;
+        padding: 20px;
+        border-radius: 10px;
+        border: #6c4343;
+        box-shadow: 6px 4px 4px #c46352;
+        transition: all 150ms ease-in-out;
+        cursor: pointer;
+      }
+      button:hover {
+        background: #6c4343;
+        color: #fddf97;
+      }
+      .instagram {
+        text-align: center;
+        color: #364968;
+        font-family: Arial, Helvetica, sans-serif;
+        display: block;
+        margin: 0 auto;
+        padding: 10px;
+      }
+      .footer {
+        display: block;
+        margin: 0 auto;
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Coffee Lovers ☕️</h1>
+      <h2>Let's talk about our <em>favorites</em> 🤎</h2>
+      <img
+        src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/094/984/original/coffee.jpeg?1693251811"
+        alt="coffee-image"
+        max
+        width="600px"
+      />
+      <p>
+        It's no wonder that coffee drinks can be confusing to keep track of with
+        so many options, it seems like the list is endless. <br />To make things
+        a little simpler for you, we've compiled
+        <strong>15 of the most popular types of coffee drinks</strong>, which
+        are all simply different combinations of coffee beans, milk, and sugar.
+      </p>
+      <hr />
+      <p>
+        So whether you're ordering at your favourite cafe or looking to whip up
+        something new at home, this guide will give you a great starting point.
+      </p>
+      <a
+        href="https://www.thirdwavecoffeeroasters.com/blogs/blog/15-most-popular-types-of-coffee-drinks"
+        target="_blank"
+        class="learn-more"
+      >
+        Check out the list here!
+      </a>
+      <button>
+        <strong>Click here to chat with fellow coffee lovers ☕️</strong>
+      </button>
+      <br />
+      <span class="instagram"
+        >Check us out on IG <strong>@coffeelovers</strong></span
+      >
+      <p class="footer">Webpage made by Chi Jan</p>
+
+      <script>
+        function chatNow() {
+          let name = prompt("What is your name?");
+          let age = prompt("How old are you?");
+          if (age < 18) {
+            alert("Sorry, you may not apply 😭");
+          } else {
+            let email = prompt("What is your email address?");
+            alert(
+              "Thanks " +
+                name +
+                ", we've sent you a link to the discussion board! Look forward to seeing you there! 🤩"
+            );
+          }
+        }
+
+        let chatButton = document.querySelector("button");
+        chatButton.addEventListener("click", chatNow);
+      </script>
+    </div>
+  </body>
+</html>
