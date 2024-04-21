@@ -21,7 +21,6 @@ h2 {
   font-size: 28px;
   font-family: Arial, Helvetica, sans-serif;
   border: 1px solid #412525;
-  padding: 20px;
   border-radius: 5px;
 }
 p {
@@ -34,15 +33,10 @@ p {
   padding: 5px;
   line-height: 30px;
 }
-img {
-  display: block;
-  margin: 0 auto;
-  border-radius: 5px;
-  padding-bottom: 20px;
-}
+
 hr {
-  width: 350px;
-  border-color: #c46352;
+  width: 490px;
+  border-color: 1px #4b1f19;
 }
 .learn-more {
   text-align: center;
